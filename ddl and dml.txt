@@ -1,0 +1,52 @@
+DML commands
+
+SELECT:
+
+SELECT * FROM students;
+
+INSERT:
+
+INSERT INTO students(1,'John','Maths');
+
+UPDATE:
+
+UPDATE students
+SET stud_name  = 'john fernando'
+WHERE s_id = 1;
+
+DELETE:
+
+DELETE FROM students WHERE stud_name='john fernando';
+
+---------------------------------------------------------------------------
+
+DDL commands
+
+CREATE:
+
+CREATE TABLE students(
+S_id SERIAL PRIMARY KEY,
+stud_name VARCHAR(50),
+stud_branch VARCHAR(50));
+
+ALTER:
+
+ALTER TABLE students
+ADD address varchar(255);
+
+TRUNCATE:
+
+TRUNCATE TABLE students;
+
+DROP:
+
+DROP TABLE students;
+
+RENAME:
+
+ALTER TABLE students
+RENAME TO students_details;
+
+
+
+
