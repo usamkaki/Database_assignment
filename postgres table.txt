@@ -1,0 +1,22 @@
+postgreSQL:
+
+CREATE DATABASE students;
+
+CREATE TABLE students(
+S_id SERIAL PRIMARY KEY,
+stud_name VARCHAR(50),
+stud_branch VARCHAR(50));
+
+INSERT INTO students(stud_name,stud_branch)
+VALUES('John','Maths');
+
+INSERT INTO students(stud_name,stud_branch)
+VALUES('brayn','Phyics');
+
+INSERT INTO students(stud_name,stud_branch)
+VALUES('torado','Chemistry');
+
+INSERT INTO students(stud_name,stud_branch)
+VALUES('george','Computer Science');
+
+SELECT * FROM students;
