@@ -1,0 +1,16 @@
+CREATE PROCEDURE insert_stud (VARCHAR(50),VARCHAR(50))
+
+LANGUAGE 'plpgsql'
+
+AS $$
+
+BEGIN 
+
+INSERT INTO students(stud_name,stud_dept) VALUES ($1,$2);
+COMMIT;
+
+END;
+
+CALL insert_stud('steve','Biology');
+
+SELECT * FROM students;

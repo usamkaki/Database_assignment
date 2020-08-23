@@ -1,0 +1,9 @@
+CREATE PROCEDURE Select_student @stud_branch nvarchar(50)
+
+AS
+
+SELECT * FROM students WHERE stud_branch = @stud_branch
+
+GO;
+
+EXEC Select_student @stud_branch = 'Physics';
